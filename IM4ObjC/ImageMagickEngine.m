@@ -1,6 +1,6 @@
 //
 //  ImageMagickEngine.m
-//  Temproject
+//  IM4ObjC
 //
 //  Created by ycs on 17/3/4.
 //  Copyright © 2017年 yuancore. All rights reserved.
@@ -22,14 +22,32 @@
 
 -(void)im_thumnailImageWithSourcePath:(NSString *)sourcePath
                              destPath:(NSString *)destPath
-                          targetWidth:(float)width
-                         targerHeight:(float)height{
+                          targetWidth:(int)width
+                         targerHeight:(int)height{
     [self.magickService thumnailImageWithSourcePath:sourcePath destPath:destPath targetWidth:width targerHeight:height];
 }
 
 -(void)im_acquireImageInfoWithSourcePath:(NSString *)sourcePath
                              destPath:(NSString *)destPath {
     [self.magickService acquireImageInfoWithSourcePath:sourcePath destPath:destPath];
+}
+
+-(void)im_cropImageCutWithSourcePath:(NSString *)sourcePath
+                         destPath:(NSString *)destPath
+                           pointX:(int)pointX
+                           pointY:(int)pointY
+                            width:(int)width
+                           height:(int)height {
+    [self.magickService cropImageCutWithSourcePath:sourcePath destPath:destPath pointX:pointX pointY:pointY width:width height:height];
+}
+
+-(void)im_resizeImageWithMode:(ImageOptModeType)modeType
+                   sourcePath:(NSString *)sourcePath
+                     destPath:(NSString *)destPath
+                        width:(int)width
+                       height:(int)height
+                      quality:(double)quality {
+    [self.magickService resizeImageWithMode:modeType sourcePath:sourcePath destPath:destPath width:width height:height quality:quality];
 }
 
 

@@ -12,17 +12,14 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ## Requirements
 
 ## Installation
+make of its static framework
 
-IM4ObjC is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod "IM4ObjC"
-```
+## Usage
+敬请期待
 
 ## Author
 
-ycs,ycs@yuancore.com
+ycs@yuancore.com
 
 ## License
 
