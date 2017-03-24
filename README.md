@@ -5,22 +5,18 @@
 [![License](https://img.shields.io/cocoapods/l/IM4ObjC.svg?style=flat)](http://cocoapods.org/pods/IM4ObjC)
 [![Platform](https://img.shields.io/cocoapods/p/IM4ObjC.svg?style=flat)](http://cocoapods.org/pods/IM4ObjC)
 
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
-
 ## Installation
 * 使用 lipo -create 命令生成framework静态库
-* 将IM4ObjC.framework拖入到项目中.* 添加依赖库libz.tbd libbz2.tbd libxml2.tbd* 在Build Settings搜索ENABLE_BITCODE,将Enable Bitcode设置为NO.
+* 将IM4ObjC.framework拖入到项目中.
+* 添加依赖库libz.tbd libbz2.tbd libxml2.tbd
+* 在Build Settings中搜索ENABLE_BITCODE,将Enable Bitcode设置为NO.
 
 ## Usage
-ImageMagickEngine *imEngine = [[ImageMagickEngine alloc]init];    [imEngine im_resizeImageWithMode:3 sourcePath:sourceImgPath destPath:destImgPath width:200 height:0 quality:0];
+ImageMagickEngine *imEngine = [[ImageMagickEngine alloc]init]; <br/>   [imEngine im_resizeImageWithMode:3 sourcePath:sourceImgPath destPath:destImgPath width:200 height:0 quality:0];
 
 ## Author
 
-ycs@yuancore.com
+missL,ycs@yuancore.com
 
 ## License
 
