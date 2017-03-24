@@ -12,7 +12,7 @@
 * 在Build Settings中搜索ENABLE_BITCODE,将Enable Bitcode设置为NO.
 
 ## Usage
-ImageMagickEngine *imEngine = [[ImageMagickEngine alloc]init]; <br/>   [imEngine im_resizeImageWithMode:3 sourcePath:sourceImgPath destPath:destImgPath width:200 height:0 quality:0];
+<nbsp;>ImageMagickEngine *imEngine = [[ImageMagickEngine alloc]init]; <br/>   [imEngine im_resizeImageWithMode:3 sourcePath:sourceImgPath destPath:destImgPath width:200 height:0 quality:0];
 
 ## Author
 
