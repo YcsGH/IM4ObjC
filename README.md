@@ -12,10 +12,11 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ## Requirements
 
 ## Installation
-make of its static framework
+* 使用 lipo -create 命令生成framework静态库
+* 将IM4ObjC.framework拖入到项目中.* 添加依赖库libz.tbd libbz2.tbd libxml2.tbd* 在Build Settings搜索ENABLE_BITCODE,将Enable Bitcode设置为NO.
 
 ## Usage
-敬请期待
+ImageMagickEngine *imEngine = [[ImageMagickEngine alloc]init];    [imEngine im_resizeImageWithMode:3 sourcePath:sourceImgPath destPath:destImgPath width:200 height:0 quality:0];
 
 ## Author
 
